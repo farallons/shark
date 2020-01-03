@@ -5,5 +5,5 @@ Shreds of code
 
 ## python
 
-- [Karatsuba multiplication](shred-1/README.md)
+- [Karatsuba multiplication](shred-1)
 
