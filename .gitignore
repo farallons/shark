@@ -1,0 +1,9 @@
+# intellij
+.idea
+*.iml
+
+# python virtual environment
+shred*/venv
+
+# shred-specific
+shred-1/result
