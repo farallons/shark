@@ -3,7 +3,7 @@ Shreds of code
 
 ----
 
-## Python
+## python
 
 - [Karatsuba multiplication](shred-1/README.md)
 
