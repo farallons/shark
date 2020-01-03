@@ -24,7 +24,7 @@ Run the base-2 Karabatsu algorithm to multiply two non-negative integers _x_ and
 python3 karabatsu2.py <x> <y>
 ```
 
-Check the timing on the multiplication of two 8192 digit numbers with both algorithms and without either algorithm 
+Check the timing on the multiplication of two 8192-digit numbers with both algorithms and without either algorithm 
 ```
 ./karatsuba-timing.sh
 ```
