@@ -25,10 +25,10 @@ def sort_and_count(a):
     b = a[:midway]
     c = a[midway:]
 
-    (b, b_count) = sort_and_count(b)
-    (c, c_count) = sort_and_count(c)
-    (a, split_count) = count_split_inversions(b, c)
-    return a, b_count + c_count + split_count
+    (sorted_b, b_count) = sort_and_count(b)
+    (sorted_c, c_count) = sort_and_count(c)
+    (sorted_a, split_count) = count_split_inversions(sorted_b, sorted_c)
+    return sorted_a, b_count + c_count + split_count
 
 
 def count_split_inversions(b, c):
