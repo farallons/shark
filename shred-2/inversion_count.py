@@ -12,11 +12,12 @@ def main(filename):
     file = join(base_dir, filename)
     with open(file, 'r') as integers:
         a = [int(x) for x in integers]
-    (a, a_count) = sort_and_count(a, len(a))
+    (a, a_count) = sort_and_count(a)
     print(a_count)
 
 
-def sort_and_count(a, n):
+def sort_and_count(a):
+    n = len(a)
     if n==1:
         return a, 0
 
@@ -24,13 +25,15 @@ def sort_and_count(a, n):
     b = a[:midway]
     c = a[midway:]
 
-    (b, b_count) = sort_and_count(b, len(b))
-    (c, c_count) = sort_and_count(c, len(c))
-    (a, split_count) = count_split_inversions(b, c, len(b), len(c))
+    (b, b_count) = sort_and_count(b)
+    (c, c_count) = sort_and_count(c)
+    (a, split_count) = count_split_inversions(b, c)
     return a, b_count + c_count + split_count
 
 
-def count_split_inversions(b, c, m, n):
+def count_split_inversions(b, c):
+    m = len(b)
+    n = len(c)
     a =[]
     i = 0
     j = 0
@@ -43,7 +46,7 @@ def count_split_inversions(b, c, m, n):
             else:
                 a.append(c[j])
                 j += 1
-                count += len(b) - i
+                count += m - i
         elif i<m:
             a.append(b[i])
             i += 1
