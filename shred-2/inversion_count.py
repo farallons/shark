@@ -5,7 +5,6 @@ import os
 
 base_dir = os.getcwd()
 join = os.path.join
-exists = os.path.exists
 
 
 def main(filename):
