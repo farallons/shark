@@ -4,6 +4,9 @@
 
 # python virtual environment
 shred*/venv
+shred*/.idea
+shred*/*.iml
 
 # shred-specific
 shred-1/result
+shred-2/Test.txt
