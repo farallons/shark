@@ -9,8 +9,9 @@ exists = os.path.exists
 
 
 def main(filename):
-    with open(filename, 'r') as file:
-        a = [int(x) for x in file]
+    file = join(base_dir, filename)
+    with open(file, 'r') as integers:
+        a = [int(x) for x in integers]
     (a, a_count) = sort_and_count(a, len(a))
     print(a_count)
 
