@@ -3,9 +3,9 @@
 
 ---
 
-Counts the number of inversions in an array of integers as given in a file of integers, one per line
+Counts the number of inversions in a list of integers as given in a file of integers, one per line
 
-The default filename is IntegerArray.txt, which is the name of an included sample file with 8 inversions
+The default filename is IntegerList.txt, which is the name of an included sample file with 8 inversions
 
 Usage: 
 ```

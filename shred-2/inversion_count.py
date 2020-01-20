@@ -17,7 +17,7 @@ def main(filename):
 
 def sort_and_count(a):
     n = len(a)
-    if n==1:
+    if n<=1:
         return a, 0
 
     midway = n//2
@@ -57,7 +57,7 @@ def count_split_inversions(b, c):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="Count the inversions in an array of integers from a file")
-    parser.add_argument('--filename', default='IntegerArray.txt')
+    parser.add_argument('--filename', default='IntegerList.txt')
     args = parser.parse_args()
     filename = args.filename
     main(filename)
